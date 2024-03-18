@@ -15,5 +15,23 @@ Here is few commands which help me to understand the basics concepts of git:
 12. git add <-file name-> => Adds the file(s) to staging area so that it can be committed.
     13.git add . => This command add all the untracked files present in the current directory to the staging area.
 13. git commit -m "some message" => Commits the added file(s) with a specific message.
-14. git push origin main => This command transfers (pushes) the changes from local repository(laptop,pc) to remote repository(github).
-    Here origin
+14. git remote add origin <url> => Connects your local repository with a remote one (Github). Here url would be
+15. git log => Displays the history of commits made.
+16. git remote -v => This command shows the url of the remote repository where our local repository is connected to.
+17. git push origin main => This command transfers (pushes) the changes from local repository(laptop,pc) to remote repository(github).
+    Here origin refers to remote repository from where we clone our project.
+
+To push my local code to GitHub
+
+1. First, I need to make sure that I am logged into GitHub on my machine using the below command :
+   sh$ gh auth login
+
+2. Then I should connect my local
+   repository to the GitHub repository by doing following steps:
+   sh$ git remote add origin https://github.com/<username>/<repo>.git
+   (Replace <username> with yours Github UserName & <repo> with Your Repo Name.) 3. After connecting your local repository to the GitHub repository, use the following command to push your code to the remote repository:
+
+3. After adding the remote repository, I can then push my local code to GitHub using the following command:
+   sh$ git push -u origin main or git push origin main
+
+4.
