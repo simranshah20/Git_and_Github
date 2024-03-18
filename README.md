@@ -31,7 +31,14 @@ To push my local code to GitHub
    sh$ git remote add origin https://github.com/<username>/<repo>.git
    (Replace <username> with yours Github UserName & <repo> with Your Repo Name.) 3. After connecting your local repository to the GitHub repository, use the following command to push your code to the remote repository:
 
-3. After adding the remote repository, I can then push my local code to GitHub using the following command:
-   sh$ git push -u origin main or git push origin main
+3. check status of connection by typing :
+   sh$ git remote -v
 
-4.
+4. now add the files to the staging area (using wild card \* means adding all files):
+   sh$ git add .
+
+5. Now commit those changes with a meaningful message :
+   sh$ git commit -m "Initial commit."
+
+6. Push the changes to the connected GitHub repository:
+   sh$ git push -u origin main or git push -u origin main
